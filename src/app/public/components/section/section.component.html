@@ -1,0 +1,16 @@
+<div>
+  <mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title>{{ section.title }}</mat-card-title>
+    </mat-card-header>
+    <img mat-card-image class="img" src="{{ section.previewImg }}" alt="">
+    <mat-card-content class="preview-text">
+      <p>
+        {{ section.previewText }}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button  [routerLink]="['/section', section.id]">Открыть</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

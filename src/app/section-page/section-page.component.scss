@@ -1,0 +1,44 @@
+.img {
+  border-radius: 15px;
+  //opacity: 0.6;
+}
+
+.section {
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  h2 {
+    margin-bottom: .5rem;
+    margin-left: 2em;
+  }
+
+  .info {
+    strong {
+      margin-right: 1rem;
+    }
+  }
+  background: #FFFFFF fixed;
+  margin: 0px 20px 10px 20px;
+  padding-top: 64px;
+
+}
+
+.loader {
+  align-content: center;
+  position: fixed;
+  z-index: 1;
+  padding-top: 64px;
+
+}
+.btn-back {
+  background-color: #ffcdd2;
+  position: sticky;
+  left: 80%;
+  margin-bottom: 2em;
+  margin-right: 2em;
+}
+

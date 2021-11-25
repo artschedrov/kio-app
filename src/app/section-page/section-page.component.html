@@ -1,0 +1,14 @@
+<div *ngIf="section$ | async as section; else loadingSection">
+  <div class="section">
+    <div class="header">
+      <h2>{{ section.title }}</h2>
+    </div>
+    <div>
+      <quill-view-html [content]="section.text"></quill-view-html>
+    </div>
+    <button mat-raised-button class="btn-back" routerLink="/">На главную</button>
+  </div>
+</div>
+<ng-template #loadingSection>
+  <mat-progress-bar mode="indeterminate" class="loader"></mat-progress-bar>
+</ng-template>
